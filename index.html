@@ -13,15 +13,19 @@
 
 <header>
     <nav class="flex">
-        <ul class="flex">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
+        <ul class="flex nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    <h1>Captured</h1>
-    <img src="assets/header-box-image.jpg" alt="Long camera lens.">
+    <div class="h1">
+        <h1>Captured</h1>
+    </div>
+    <div class="header-img">
+        <img src="assets/header-box-image.jpg" alt="Long camera lens.">
+    </div>
 </header>
 
 <main>
@@ -29,10 +33,11 @@
 <!-- ABOUT  -->
 
     <section class="about">
+        <!-- <img src="assets/header-box-image.jpg" alt="Long camera lens."> -->
         <div class="wrapper flex-cc">
             <div class="about-content">
                 <h3>What is captured?</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibilum lacus tristique eu. Sed urna ex, portitor nec iaculis at, consectetur vel turpis. Vestibilum ultricies, felis in lacinia portitor, tortor metus convallis augue, at fermentum diam erat nec quam. Nulla facilisi.</p>
                 <a href="#" class="more">Find out more</a>
             </div>
         </div>
@@ -41,25 +46,29 @@
 <!-- GRID  -->
 
     <section class="grid">
-        <div class="wrapper">
+        <div class="wrapper flex-wrap">
         <!-- <div> -->
             <img src="assets/left-image.jpg" alt="" class="side-img left-img">
         <!-- </div> -->
 
-        <div>
+        <div class="grid-text right-gt">
+            <div class="grid-text-sub">
             <h3>Unlock your skills</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In et risus nec orci omare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, portitor nec iaculis at, consectetur vel turpis.</p>
             <a href="#" class="more">Read more</a>
+            </div>
         </div>
 
         <div>
             <img src="assets/right-image.jpg" alt="" class="right-img side-img">
         </div>
 
-        <div>
+        <div class="grid-text left-gt">
+            <div class="grid-text-sub">
             <h3>Getting new gear</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In et risus nec orci omare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, portitor nec iaculis at, consectetur vel turpis.</p>
             <a href="#" class="more">Read more</a>
+            </div>
         </div>
     </section>
 

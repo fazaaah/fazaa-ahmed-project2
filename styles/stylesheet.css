@@ -32,13 +32,17 @@ h4 {
   line-height: normal;
   letter-spacing: 1px; }
 
-nav {
+nav a {
   font-family: "Playfair Display", serif;
   color: #2c2c2c;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 20px;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 10px; }
+
+.nav-list a:hover {
+  border-bottom: #4ceea7 3px solid; }
 
 a.more {
   font-family: "Playfair Display", serif;
@@ -58,10 +62,27 @@ p {
   margin-top: 15px; }
 
 .about p {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  width: 90%;
+  margin: 20px auto 40px auto; }
 
 .profile p {
   margin-bottom: 50px; }
+
+.grid-text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.right-gt {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 100px; }
+
+.grid-text-sub {
+  width: 50%; }
 
 .wrapper {
   width: 80%;
@@ -100,10 +121,13 @@ body {
   margin: 0; }
 
 header {
-  height: 79vh;
+  height: 90vh;
   margin-top: 0; }
-  header h1 {
-    margin-top: 300px; }
+  header .h1 {
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    z-index: 5; }
   header nav {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -132,8 +156,15 @@ ul {
 section {
   padding: 80px 0px; }
 
+.about {
+  position: relative; }
+  .about img {
+    position: absolute;
+    right: 0;
+    top: -50px; }
+
 .about-content {
-  margin-top: 80px;
+  margin-top: 140px;
   margin-bottom: 50px;
   text-align: center; }
 
@@ -152,7 +183,24 @@ footer p {
 
 header {
   background: url(../assets/header-image.jpg);
-  background-size: cover; }
+  background-size: cover;
+  z-index: -2;
+  position: relative; }
+
+img {
+  max-width: 100%; }
+
+.header-img {
+  width: 42%;
+  position: absolute;
+  right: 0;
+  bottom: -150px;
+  z-index: 2;
+  border: #fdfa69 50px solid;
+  border-right: none; }
+
+.about {
+  z-index: -5; }
 
 .gallery img {
   width: 31%; }

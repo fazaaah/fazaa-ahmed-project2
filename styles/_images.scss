@@ -1,7 +1,26 @@
 header {
     background: url(../assets/header-image.jpg);
     background-size: cover;
+    z-index: -2;
+    position: relative;
+}
 
+img {
+    max-width: 100%;
+}
+
+.header-img {
+    width: 42%;
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+    z-index: 2;
+    border: $box-col 50px solid;
+    border-right: none;
+}
+
+.about {
+    z-index: -5;
 }
 
 .gallery img {

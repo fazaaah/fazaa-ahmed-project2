@@ -53,8 +53,13 @@ h4 {
     text-align: center;
 }
 
-nav {
+nav a {
     @include click(29px);
+    padding-bottom: 10px;
+}
+
+.nav-list a:hover {
+    border-bottom: $input-col 3px solid;
 }
 
 a.more {
@@ -75,10 +80,26 @@ p {
 
 .about p {
     margin-bottom: 40px;
+    width: 90%;
+    margin: 20px auto 40px auto;
 }
 
 .profile p {
     margin-bottom: 50px;
+}
+
+.grid-text {
+    width: 100%;
+    display: flex;
+}
+
+.right-gt {
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+
+.grid-text-sub {
+    width: 50%;
 }
 
 
