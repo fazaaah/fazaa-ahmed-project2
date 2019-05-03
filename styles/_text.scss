@@ -29,15 +29,16 @@ h1 {
     text-align: center;
 }
 
-h1.subpage {
+h2 {
     @include headings(80px, 92px, normal)
 }
 
-h2 {
-    @include headings(42px, normal, 1px)
+h3 {
+    @include headings(42px, normal, 1px);
+    margin: 0;
 }
 
-h3 {
+h4 {
     @include headings(32px, normal, 1px)
 }
 
@@ -69,7 +70,17 @@ p {
     font-size: 20px;
     line-height: 32px;
     color: $text-col;
+    margin-top: 15px;
 }
+
+.about p {
+    margin-bottom: 40px;
+}
+
+.profile p {
+    margin-bottom: 50px;
+}
+
 
 
 

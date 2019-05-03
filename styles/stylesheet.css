@@ -7,7 +7,7 @@ h1 {
   letter-spacing: normal;
   text-align: center; }
 
-h1.subpage {
+h2 {
   font-family: "Playfair Display", serif;
   color: #2c2c2c;
   text-transform: uppercase;
@@ -15,15 +15,16 @@ h1.subpage {
   line-height: 92px;
   letter-spacing: normal; }
 
-h2 {
+h3 {
   font-family: "Playfair Display", serif;
   color: #2c2c2c;
   text-transform: uppercase;
   font-size: 42px;
   line-height: normal;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  margin: 0; }
 
-h3 {
+h4 {
   font-family: "Playfair Display", serif;
   color: #2c2c2c;
   text-transform: uppercase;
@@ -53,7 +54,14 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 32px;
-  color: #2c2c2c; }
+  color: #2c2c2c;
+  margin-top: 15px; }
+
+.about p {
+  margin-bottom: 40px; }
+
+.profile p {
+  margin-bottom: 50px; }
 
 .wrapper {
   width: 80%;
@@ -80,7 +88,7 @@ p {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.space-even {
+.space-btwn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,6 +102,13 @@ body {
 header {
   height: 79vh;
   margin-top: 0; }
+  header h1 {
+    margin-top: 300px; }
+  header nav {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-right: 50px; }
 
 ul {
   margin-top: 0;
@@ -117,8 +132,17 @@ ul {
 section {
   padding: 80px 0px; }
 
+.about-content {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  text-align: center; }
+
+.icon-section {
+  padding-top: 100px; }
+
 .lil-section {
-  width: 50%; }
+  width: 48%;
+  padding-top: 40px; }
 
 .profile-text {
   margin-left: 100px; }
@@ -143,18 +167,19 @@ header {
   position: relative; }
 
 .side-img {
-  position: absolute; }
+  position: absolute;
+  width: 42%; }
 
 .left-img {
   -webkit-box-shadow: 35px 35px 0px 0px #fdfa69;
   box-shadow: 35px 35px 0px 0px #fdfa69;
-  top: -30px;
-  left: 0; }
+  top: -35px;
+  left: 0px; }
 
 .right-img {
   -webkit-box-shadow: -35px 35px 0px 0px #fdfa69;
   box-shadow: -35px 35px 0px 0px #fdfa69;
-  bottom: -50px;
+  bottom: -70px;
   right: 0; }
 
 .profile img {
