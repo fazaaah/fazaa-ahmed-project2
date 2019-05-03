@@ -1,0 +1,40 @@
+header {
+    background: url(../assets/header-image.jpg);
+    background-size: cover;
+
+}
+
+.gallery img {
+    width: 31%;
+}
+
+.banner {
+    background-image: url(../assets/banner.jpg);
+    height: 50vh;
+    background-size: cover;
+    z-index: 2;
+}
+
+.grid {
+    position: relative;
+}
+
+.side-img {
+    position: absolute;
+}
+
+.left-img {
+    box-shadow: 35px 35px 0px 0px rgba(253,250,105,1);
+    top: -30px;
+    left: 0;
+}
+
+.right-img {
+    box-shadow: -35px 35px 0px 0px rgba(253,250,105,1);
+    bottom: -50px;
+    right: 0;
+}
+
+.profile img {
+    box-shadow: 35px 35px 0px 0px rgba(253,250,105,1);
+}

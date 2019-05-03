@@ -1,0 +1,26 @@
+@import "text";
+@import "layouts";
+@import "images";
+@import "colors";
+
+// Colors
+$bg-col1: #effdf3;
+$bg-col2: #fafafa;
+$input-col: #4ceea7;
+$box-col: #fdfa69;
+$text-col: #2c2c2c;
+
+
+body {
+    color: $text-col;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $text-col;
+}
+

@@ -1,0 +1,77 @@
+// ----  VARIABLES ----
+
+// Colors
+$bg-col1: #fafafa;
+$bg-col2: #effdf3;
+$input-col: #4ceea7;
+$box-col: #fdfa69;
+$text-col: #2c2c2c;
+
+// Fonts
+$reg-text: 'Roboto', sans-serif;
+$other-text: 'Playfair Display', serif;
+
+// ---- STYLING ----
+
+// Headings
+
+@mixin headings($font-size, $line-height, $let-spacing) {
+    font-family: $other-text;
+    color: $text-col;
+    text-transform: uppercase;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $let-spacing;  
+}
+
+h1 {
+    @include headings(120px, normal, normal);
+    text-align: center;
+}
+
+h1.subpage {
+    @include headings(80px, 92px, normal)
+}
+
+h2 {
+    @include headings(42px, normal, 1px)
+}
+
+h3 {
+    @include headings(32px, normal, 1px)
+}
+
+// Things you click on
+
+@mixin click($line-height) {
+    font-family: $other-text;
+    color: $text-col;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav {
+    @include click(29px);
+}
+
+a.more {
+    @include click(32px);
+    background: $input-col;
+    padding: 12px 15px;
+}
+
+// Regular text
+
+p {
+    font-family: $reg-text;
+    font-size: 20px;
+    line-height: 32px;
+    color: $text-col;
+}
+
+
+
+
+

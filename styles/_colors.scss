@@ -1,0 +1,24 @@
+// Colors
+$bg-col1: #effdf3;
+$bg-col2: #fafafa;
+$input-col: #4ceea7;
+$box-col: #fdfa69;
+$text-col: #2c2c2c;
+
+section:nth-child(odd) {
+    background: $bg-col1;
+}
+
+.grid,
+.gallery {
+    background: $bg-col2;
+}
+
+footer {
+    background: $text-col;
+    padding: 5px;
+        p {
+            color: $bg-col2;
+            text-align: center;
+        }
+}
