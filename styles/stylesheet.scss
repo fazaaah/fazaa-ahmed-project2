@@ -1,14 +1,9 @@
+@import "variables";
+@import "home";
 @import "text";
-@import "layouts";
 @import "images";
-@import "colors";
-
-// Colors
-$bg-col1: #effdf3;
-$bg-col2: #fafafa;
-$input-col: #4ceea7;
-$box-col: #fdfa69;
-$text-col: #2c2c2c;
+@import "contact";
+@import "blog";
 
 
 body {

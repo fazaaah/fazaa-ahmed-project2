@@ -1,20 +1,4 @@
-// ----  VARIABLES ----
-
-// Colors
-$bg-col1: #fafafa;
-$bg-col2: #effdf3;
-$input-col: #4ceea7;
-$box-col: #fdfa69;
-$text-col: #2c2c2c;
-
-// Fonts
-$reg-text: 'Roboto', sans-serif;
-$other-text: 'Playfair Display', serif;
-
-// ---- STYLING ----
-
 // Headings
-
 @mixin headings($font-size, $line-height, $let-spacing) {
     font-family: $other-text;
     color: $text-col;
@@ -22,6 +6,16 @@ $other-text: 'Playfair Display', serif;
     font-size: $font-size;
     line-height: $line-height;
     letter-spacing: $let-spacing;  
+}
+
+// Things you click on
+@mixin click($line-height) {
+    font-family: $other-text;
+    color: $text-col;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
 }
 
 h1 {
@@ -42,23 +36,13 @@ h4 {
     @include headings(32px, normal, 1px)
 }
 
-// Things you click on
-
-@mixin click($line-height) {
-    font-family: $other-text;
-    color: $text-col;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 20px;
-    text-align: center;
-}
-
 nav a {
     @include click(29px);
     padding-bottom: 10px;
+    border-bottom: none;
 }
 
-.nav-list a:hover {
+nav a:hover {
     border-bottom: $input-col 3px solid;
 }
 
@@ -68,39 +52,17 @@ a.more {
     padding: 12px 15px;
 }
 
-// Regular text
-
-p {
-    font-family: $reg-text;
-    font-size: 20px;
-    line-height: 32px;
-    color: $text-col;
-    margin-top: 15px;
+a.more:hover {
+    background: darken($input-col, 15%);
 }
 
-.about p {
-    margin-bottom: 40px;
-    width: 90%;
-    margin: 20px auto 40px auto;
-}
 
-.profile p {
-    margin-bottom: 50px;
-}
 
-.grid-text {
-    width: 100%;
-    display: flex;
-}
 
-.right-gt {
-    justify-content: flex-end;
-    margin-bottom: 100px;
-}
 
-.grid-text-sub {
-    width: 50%;
-}
+
+
+
 
 
 

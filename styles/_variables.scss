@@ -1,0 +1,40 @@
+// Colors
+$bg-col1: #effdf3;
+$bg-col2: #fafafa;
+$input-col: #4ceea7;
+$box-col: #fdfa69;
+$text-col: #2c2c2c;
+
+// Fonts
+$reg-text: 'Roboto', sans-serif;
+$other-text: 'Playfair Display', serif;
+
+// Headings
+@mixin headings($font-size, $line-height, $let-spacing) {
+    font-family: $other-text;
+    color: $text-col;
+    text-transform: uppercase;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $let-spacing;  
+}
+
+// Things you click on
+@mixin click($line-height) {
+    font-family: $other-text;
+    color: $text-col;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav a {
+    @include click(29px);
+    padding-bottom: 10px;
+    border-bottom: none;
+}
+
+nav a:hover {
+    border-bottom: $input-col 3px solid;
+}
