@@ -27,10 +27,13 @@
     <section class="blog">
         <div class="wrapper flex">
             <div class="sidebar">
-                <div>
+                <!-- <div>
                     <img src="assets/side-blog-image.jpg" alt="Camera lens floating above someone's open hand, with some hills and the sea in the background." class="side-blog-img">
-                </div>
+                </div> -->
                 <div class="sidebar-text">
+                    <div class="side-blog-img">
+                        <img src="assets/side-blog-image.jpg" alt="Camera lens floating above someone's open hand, with some hills and the sea in the background.">
+                    </div>
                     <div>
                         <h4>About captured</h4>
                         <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum.</p>
@@ -48,15 +51,21 @@
             </div>
         
             <div class="main-blog">
-                <div>
+                <!-- <div>
                     <img src="assets/blog-post-image.jpg" alt="Woman sitting in a field of flowers, turned away pointing her camera at something." class="main-blog-img">
-                </div>
-                <div class="main-blog-text">
-                    <h3>Finding great locations</h3>
-                    <p class="caption">Monday May 4th, 2019 by Dieula</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur in tempore distinctio? Deleniti odit dignissimos iure itaque esse quibusdam ullam, enim illum. At voluptatibus quos delectus voluptatem culpa quisquam odit!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus labore excepturi temporibus illo ipsum veritatis quo molestiae laboriosam, sint esse, odit quibusdam unde veniam quaerat iusto deserunt accusamus reprehenderit quae?</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore eligendi excepturi deserunt officia! Distinctio dolores officiis cupiditate quisquam eaque blanditiis doloribus provident magni, voluptate consequuntur? Quos laudantium reprehenderit cum sapiente.</p>
+                </div> -->
+                <div class="main-blog-post">
+                    <div class="main-blog-img">
+                        <img src="assets/blog-post-image.jpg"
+                            alt="Woman sitting in a field of flowers, turned away pointing her camera at something.">
+                    </div>
+                    <div class="main-blog-text">
+                        <h3>Finding great locations</h3>
+                        <p class="caption">Monday May 4th, 2019 by Dieula</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur in tempore distinctio? Deleniti odit dignissimos iure itaque esse quibusdam ullam, enim illum. At voluptatibus quos delectus voluptatem culpa quisquam odit!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus labore excepturi temporibus illo ipsum veritatis quo molestiae laboriosam, sint esse, odit quibusdam unde veniam quaerat iusto deserunt accusamus reprehenderit quae?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore eligendi excepturi deserunt officia! Distinctio dolores officiis cupiditate quisquam eaque blanditiis doloribus provident magni, voluptate consequuntur? Quos laudantium reprehenderit cum sapiente.</p>
+                    </div>
                 </div>
 
                 <div class="comment-section">
@@ -84,12 +93,13 @@
                 </div>
 
                 <div class="input-comment flex-column">
-                    <div class="name-email flex">
+                    <div class="name-email space-btwn">
                         <input type="text" id="name" class="name" placeholder="Name">
                         <input type="email" id="email" class="email" placeholder="Email address">
                     </div>
-                    <input type="text" id="comment" class="comment" placeholder="Comment">
-                    <input type="submit">
+                    <textarea name="text" rows="10" cols="10" wrap="soft" maxlength="400" style="overflow:hidden" resize:none class="comment" placeholder="Comment"></textarea>
+                    <!-- <input type="text" id="comment" class="comment" placeholder="Comment"> -->
+                    <input type="submit" class="post" value="Post comment">
                 </div>
             </div>
 

@@ -4,38 +4,62 @@ header.blog-header {
     height: 67vh;
 }
 
-.blog {
-    position: relative;
-}
+// .blog {
+//     position: relative;
+// }
 
 .sidebar {
     width: 36%;
     padding-right: 50px;
         .sidebar-text {
             background: $bg-col2;
-            padding-top: 80%;
+            padding-top: 100%;
+            position: relative;
+                .side-blog-img {
+                position: absolute;
+                right: 10px;
+                top: -30px;
+                width: 140%;
+                z-index: 6;
+                }
         }
-        .side-blog-img {
-            position: absolute;
-            left: 0;
-            width: 32%;
-        }
+}
+
+.sidebar-text li {
+    font-family: $reg-text;
+    font-size: 20px;
+    line-height: 32px;
+    color: $text-col;
+    margin-top: 15px;
+}
+
+.sidebar-text li::before {
+    content: "\2022";
+    color: $input-col;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
 }
 
 .main-blog {
     width: 64%;
     padding-left: 50px;
-        .main-blog-img {
-            box-shadow: -35px 35px 0px 0px rgba(253,250,105,1);
-            width: 60%;
-            position: absolute;
-            right: 0;
-            top: -150px;
-        }
-        .main-blog-text {
-            margin-top: 65%;
+        .main-blog-post {
+            padding-top: 65%;
             border-left: $box-col 3px solid;
             border-bottom: $box-col 3px solid;
+            position: relative;
+                .main-blog-img {
+                    box-shadow: -35px 35px 0px 0px rgba(253,250,105,1);
+                    width: 125%;
+                    position: absolute;
+                    right: -21%;
+                    top: -220px;
+                }
+                .main-blog-text {
+                    padding-left: 35px;
+                }
         }
 }
 
@@ -44,3 +68,43 @@ header.blog-header {
     margin-bottom: 40px;
 }
 
+.input-comment {
+    .comment {
+        // height: 200px;
+        border: $input-col 2px solid;
+        resize: none;
+        overflow: hidden;
+    }
+    .post {
+        @include click(32px);
+        background: $input-col;
+        padding: 8px 15px;
+        margin-top: 30px;
+        border: none;
+    }
+}
+
+.name,
+.email,
+.comment {
+    background: $bg-col1;
+    font-family: $reg-text;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.name,
+.email {
+    width: 50%;
+    border: none;
+    border-bottom: $input-col 2px solid;
+}
+
+.name {
+    margin-right: 40px;
+}
+
+::placeholder {
+    color: $text-col;
+}

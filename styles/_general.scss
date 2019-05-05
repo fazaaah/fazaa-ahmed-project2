@@ -1,0 +1,70 @@
+// GENERAL
+
+body {
+    margin: 0;
+}
+
+section {
+    padding: 80px 0px;
+}
+
+section:nth-child(odd) {
+    background: $bg-col1;
+}
+
+.grid,
+.gallery {
+    background: $bg-col2;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-family: $reg-text;
+    font-size: 20px;
+    line-height: 32px;
+    color: $text-col;
+    margin-top: 15px;
+}
+
+a.more {
+    @include click(32px);
+    background: $input-col;
+    padding: 12px 15px;
+}
+
+a.more:hover {
+    background: darken($input-col, 15%);
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-btwn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-cc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
