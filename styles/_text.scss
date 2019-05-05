@@ -33,27 +33,8 @@ h3 {
 }
 
 h4 {
-    @include headings(32px, normal, 1px)
-}
-
-nav a {
-    @include click(29px);
-    padding-bottom: 10px;
-    border-bottom: none;
-}
-
-nav a:hover {
-    border-bottom: $input-col 3px solid;
-}
-
-a.more {
-    @include click(32px);
-    background: $input-col;
-    padding: 12px 15px;
-}
-
-a.more:hover {
-    background: darken($input-col, 15%);
+    @include headings(32px, normal, 1px);
+    margin-bottom: 10px;
 }
 
 

@@ -13,7 +13,7 @@ header.blog-header {
     padding-right: 50px;
         .sidebar-text {
             background: $bg-col2;
-            padding-top: 100%;
+            padding: 100% 25px 25px 25px;
             position: relative;
                 .side-blog-img {
                 position: absolute;
@@ -24,13 +24,15 @@ header.blog-header {
                 }
         }
 }
+.sidebar-text ul {
+    padding-left: 20px;
+}
 
 .sidebar-text li {
     font-family: $reg-text;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 36px;
     color: $text-col;
-    margin-top: 15px;
 }
 
 .sidebar-text li::before {
@@ -40,6 +42,11 @@ header.blog-header {
     display: inline-block; 
     width: 1em;
     margin-left: -1em;
+}
+
+.find-out {
+    font-weight: bold;
+    font-style: italic;
 }
 
 .main-blog {
@@ -107,4 +114,21 @@ header.blog-header {
 
 ::placeholder {
     color: $text-col;
+}
+
+.user-posts {
+    margin: 30px 0;
+}
+
+.user-posts:nth-last-of-type(1) {
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.comment-posts {
+    margin-left: 25px;
+        p {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
 }

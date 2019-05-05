@@ -228,8 +228,9 @@ i {
 .profile-img {
   width: 70%; }
 
-.gallery img {
-  width: 31%; }
+.gallery-img {
+  width: 31%;
+  max-width: 100%; }
 
 footer {
   background: #2c2c2c;
@@ -271,33 +272,8 @@ h4 {
   text-transform: uppercase;
   font-size: 32px;
   line-height: normal;
-  letter-spacing: 1px; }
-
-nav a {
-  font-family: "Playfair Display", serif;
-  color: #2c2c2c;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 20px;
-  text-align: center;
-  padding-bottom: 10px;
-  border-bottom: none; }
-
-nav a:hover {
-  border-bottom: #4ceea7 3px solid; }
-
-a.more {
-  font-family: "Playfair Display", serif;
-  color: #2c2c2c;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 20px;
-  text-align: center;
-  background: #4ceea7;
-  padding: 12px 15px; }
-
-a.more:hover {
-  background: #15d983; }
+  margin-bottom: 10px; }
 
 header.contact-header {
   background: url(../assets/contact-header.jpg); }
@@ -312,7 +288,7 @@ header.blog-header {
   padding-right: 50px; }
   .sidebar .sidebar-text {
     background: #fafafa;
-    padding-top: 100%;
+    padding: 100% 25px 25px 25px;
     position: relative; }
     .sidebar .sidebar-text .side-blog-img {
       position: absolute;
@@ -321,12 +297,14 @@ header.blog-header {
       width: 140%;
       z-index: 6; }
 
+.sidebar-text ul {
+  padding-left: 20px; }
+
 .sidebar-text li {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
-  line-height: 32px;
-  color: #2c2c2c;
-  margin-top: 15px; }
+  line-height: 36px;
+  color: #2c2c2c; }
 
 .sidebar-text li::before {
   content: "\2022";
@@ -335,6 +313,10 @@ header.blog-header {
   display: inline-block;
   width: 1em;
   margin-left: -1em; }
+
+.find-out {
+  font-weight: bold;
+  font-style: italic; }
 
 .main-blog {
   width: 64%;
@@ -404,6 +386,19 @@ header.blog-header {
 
 ::placeholder {
   color: #2c2c2c; }
+
+.user-posts {
+  margin: 30px 0; }
+
+.user-posts:nth-last-of-type(1) {
+  margin-top: 70px;
+  margin-bottom: 10px; }
+
+.comment-posts {
+  margin-left: 25px; }
+  .comment-posts p {
+    margin-top: 0;
+    margin-bottom: 5px; }
 
 body {
   color: #2c2c2c; }
