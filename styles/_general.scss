@@ -1,7 +1,50 @@
-// GENERAL
+// HEADING STYLES
+
+// Headings
+@mixin headings($font-size, $line-height, $let-spacing) {
+    font-family: $other-text;
+    color: $text-col;
+    text-transform: uppercase;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $let-spacing;  
+}
+
+// Things you click on
+@mixin click($line-height) {
+    font-family: $other-text;
+    color: $text-col;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+    @include headings(120px, normal, normal);
+    text-align: center;
+}
+
+h2 {
+    @include headings(80px, 92px, normal);
+    text-align: center;
+}
+
+h3 {
+    @include headings(42px, normal, 1px);
+    margin: 0;
+}
+
+h4 {
+    @include headings(32px, normal, 1px);
+    margin-bottom: 10px;
+}
+
+// ELEMENTS
 
 body {
     margin: 0;
+    color: $text-col;
 }
 
 section {
@@ -10,11 +53,6 @@ section {
 
 section:nth-child(odd) {
     background: $bg-col1;
-}
-
-.grid,
-.gallery {
-    background: $bg-col2;
 }
 
 img {
@@ -29,19 +67,58 @@ p {
     margin-top: 15px;
 }
 
-a.more {
-    @include click(32px);
-    background: $input-col;
-    padding: 12px 15px;
+a {
+    text-decoration: none;
+    color: $text-col;
 }
 
-a.more:hover {
-    background: darken($input-col, 15%);
+nav {
+    display: flex;
+    justify-content: flex-end;
+        li {
+        list-style-type: none;
+        margin: 30px;
+            a {
+                @include click(29px);
+                padding-bottom: 10px;
+                border-bottom: none;
+            }
+        }
 }
+
+nav a:hover {
+    border-bottom: $input-col 3px solid;
+}
+
+.nav-list {
+    display: flex;
+}
+
+// .fas-bars {
+//     display: none;
+// }
+
+// @media (max-width: 600px) {
+//     .fas-bars {
+//         display: block;
+//     }
+//     .nav-list {
+//         display: none;
+//         // flex-direction: column;
+//         // text-align: center;
+//         //     li {
+//         //         margin: 5px auto;
+//         //     }
+//     }
+// }
 
 .wrapper {
     width: 80%;
     margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    width: 90%;
 }
 
 .flex {

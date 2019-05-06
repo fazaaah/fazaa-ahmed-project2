@@ -1,3 +1,193 @@
 header.contact-header {
     background: url(../assets/contact-header.jpg);
+    background-size: cover;
+    height: 67vh;
+    // font-size: 4vw;
 }
+
+.contact-header i {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .contact-header i {
+        display: inline;
+        width: 50px;
+        padding-top: 80px;
+        margin-left: 80%;
+        background: none;
+        font-size: 35px
+    }
+    .contact-header i:hover {
+        color: $input-col;
+    }
+    .nav-list {
+        display: none;
+    }
+}
+
+.contact-container {
+    display: flex;
+}
+
+.socials i {
+    background: none;
+    transition: 0.3s ease;
+    font-size: 30px;
+    text-align: left;
+}
+
+.socials i:hover {
+    color: $input-col;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+        h4 {
+            margin: 5px 0 20px 0;
+        }
+        p {
+            margin: 0;
+        }
+}
+
+.contact-info {
+    margin-bottom: 80px;
+}
+
+.form {
+    position: relative;
+}
+
+.input-msg {
+    background: $bg-col2;
+    padding: 30px;
+    box-shadow: -35px 35px 0px 0px rgba(253,250,105,1);
+    position: absolute;
+    right: -40px;
+    top: -250px;
+}
+
+.name-email-c {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-c,
+.email-c,
+.comment-c {
+    background: rgba(0,0,0,0);
+    font-family: $reg-text;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.name-c,
+.email-c {
+    width: 40%;
+    border: none;
+    border-bottom: $input-col 2px solid;
+}
+
+.name-c,
+.email-c,
+.message {
+    background: rgba(0,0,0,0);
+    font-family: $reg-text;
+    margin-top: 30px;
+}
+
+.message {
+    resize: none;
+    overflow: hidden;
+    padding: 15px;
+    border: $input-col 2px solid;
+    font-size: 20px;
+}
+
+.submit {
+    @include click(32px);
+    background: $input-col;
+    padding: 8px 15px;
+    margin-top: 30px;
+    border: none;
+}
+
+@media (max-width: 1230px) {
+    .wrapper {
+        width: 85%;
+    }
+    .contact-info {
+        width: 30%;
+            h4 {
+                font-size: 26px;
+            }
+            p {
+                font-size: 18px;
+            }
+    }
+}
+
+@media (max-width: 1100px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+            .input-msg {
+                position: static;
+                margin-top: -250px;
+                margin-bottom: 50px;
+            }
+            .contact-info {
+                width: 100%;
+                margin: 50px auto;
+                margin-bottom: 20px;
+                text-align: center;
+                    .physical-address {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+            }
+    }
+}
+
+// .socials i {
+//     text-align: center;
+// }
+
+@media (max-width: 800px) {
+    section.contact-page {
+        padding-bottom: 30px;
+            .contact-info {
+                margin-bottom: 0;
+                .physical-address {
+                    flex-direction: column;
+                }
+            }
+    }
+}
+
+@media (max-width: 700px) {
+    .contact-header h2 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+
+    .input-msg {
+        margin-top: -100px;
+        .name-email-c {
+            flex-direction: column;
+                .name-c, .email-c {
+                    width: 90%;
+                }
+        }
+    }
+}
+

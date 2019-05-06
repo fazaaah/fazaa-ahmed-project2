@@ -6,20 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog</title>
     <link rel="stylesheet" href="styles/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i|Roboto:400,700i" rel="stylesheet">
 </head>
 <body>
     
 <header class="blog-header">
-    <nav class="flex">
-        <ul class="flex nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Blog</h1>
+    <div class="wrapper">
+        <nav class="flex">
+            <ul class="flex nav-list">
+                <li><a href="../Project2/index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="../Project2/blog.html">Blog</a></li>
+                <li><a href="../Project2/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h2>Blog</h2>
+    </div>
 </header>
 
 <main>
@@ -72,7 +74,7 @@
                     <h4>Comments:</h4>
                     <div>
                         <div class="flex user-posts">
-                            <div>
+                            <div class="user-img">
                                 <img src="assets/comment-1.jpg" alt="Photo of user making comment.">
                             </div>
                             <div class="comment-posts">
@@ -81,7 +83,7 @@
                             </div>
                         </div>
                         <div class="flex user-posts">
-                            <div>
+                            <div class="user-img">
                                 <img src="assets/comment-2.jpg" alt="Photo of user making comment.">
                             </div>
                             <div class="comment-posts">
@@ -98,8 +100,7 @@
                         <input type="email" id="email" class="email" placeholder="Email address">
                     </div>
                     <textarea name="text" rows="10" cols="10" wrap="soft" maxlength="400" class="comment" placeholder="Comment"></textarea>
-                    <!-- <input type="text" id="comment" class="comment" placeholder="Comment"> -->
-                    <input type="submit" class="post" value="Post comment">
+                    <input type="submit" class="submit" value="Post comment">
                 </div>
             </div>
 

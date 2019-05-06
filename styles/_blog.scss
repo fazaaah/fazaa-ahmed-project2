@@ -49,11 +49,15 @@ header.blog-header {
     font-style: italic;
 }
 
+.find-out:hover {
+    text-decoration: underline;
+}
+
 .main-blog {
     width: 64%;
     padding-left: 50px;
         .main-blog-post {
-            padding-top: 65%;
+            padding-top: 50%;
             border-left: $box-col 3px solid;
             border-bottom: $box-col 3px solid;
             position: relative;
@@ -70,6 +74,11 @@ header.blog-header {
         }
 }
 
+.user-img {
+    // width: 35%;
+    width: 250px;
+}
+
 .caption {
     margin-top: 5px;
     margin-bottom: 40px;
@@ -82,19 +91,29 @@ header.blog-header {
         resize: none;
         overflow: hidden;
     }
-    .post {
+    .submit {
         @include click(32px);
         background: $input-col;
         padding: 8px 15px;
         margin-top: 30px;
         border: none;
+        transition: 0.3s ease;
     }
+}
+
+.submit:hover {
+    background: darken($input-col, 20%)
+}
+
+.name-email {
+    display: flex;
+    justify-content: space-between;
 }
 
 .name,
 .email,
 .comment {
-    background: $bg-col1;
+    background: rgba(0,0,0,0);
     font-family: $reg-text;
     font-size: 20px;
     margin-top: 30px;
@@ -103,14 +122,14 @@ header.blog-header {
 
 .name,
 .email {
-    width: 50%;
+    width: 40%;
     border: none;
     border-bottom: $input-col 2px solid;
 }
 
-.name {
-    margin-right: 40px;
-}
+// .name {
+//     margin-right: 40px;
+// }
 
 ::placeholder {
     color: $text-col;

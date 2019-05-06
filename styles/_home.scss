@@ -6,7 +6,6 @@ header {
     background: url(../assets/header-image.jpg);
     background-size: cover;
     background-position: center center;
-    z-index: -2;
     position: relative;
         .h1 {
             position: absolute;
@@ -14,17 +13,17 @@ header {
             left: 400px;
             z-index: 5;
         }
-        nav {
-            justify-content: flex-end;
-            margin-right: 50px;
-                ul {
-                    margin-top: 0;
-                    align-items: flex-end;
-                        li {
-                        padding: 30px;
-                        }
-                    }
-            }
+        // nav {
+        //     justify-content: flex-end;
+        //     margin-right: 50px;
+        //         ul {
+        //             margin-top: 0;
+        //             align-items: flex-end;
+        //                 li {
+        //                 padding: 30px;
+        //                 }
+        //             }
+        //     }
 }
 
 
@@ -102,10 +101,12 @@ a.more:hover {
 .right-gt {
     justify-content: flex-end;
     margin-bottom: 100px;
+    padding-left: 100px;
 }
 
 .left-gt {
     padding-top: 50px;
+    padding-right: 100px;
 }
 
 .grid,
@@ -122,7 +123,8 @@ a.more:hover {
             padding-top: 40px;
         }
             .icon {
-                width: 10%;
+                height: 45px;
+                width: 45px;
                 margin-top: 4px;
             }
             .icon-text {
@@ -132,10 +134,15 @@ a.more:hover {
 }
 
 i {
-    font-size: 30px;
+    font-size: 22px;
     background: $input-col;
     border-radius: 50%;
     padding: 10px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
 }
 
 // BANNER
@@ -144,17 +151,23 @@ i {
     background-image: url(../assets/banner.jpg);
     height: 50vh;
     background-size: cover;
+    background-position: center center;
     z-index: 2;
 }
 
 // MONTH'S PROFILE
+
+.profile-container {
+    width: 100%;
+}
 
 .profile p {
     margin-bottom: 50px;
 }
 
 .profile-text {
-    margin-left: 10%;
+    margin-left: 90px;
+    width: 66%;
 }
 
 .profile img {
@@ -162,15 +175,70 @@ i {
 }
 
 .profile-img {
-    width: 70%;
+    width: 33%;
+}
+
+@media (max-width: 1020px) {
+    .profile-img {
+        display: none;
+    }
+    .profile-text {
+        width: 100%;
+        margin-left: 0;
+    }
+    .profile p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 560px) {
+    .profile-img {
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 // GALLERY
+
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+}
 
 .gallery-img {
     width: 31%;
     max-width: 100%;
 }
+
+@media (max-width: 1020px) {
+    .gallery-img:nth-last-of-type(1) {
+        display: none;
+    }
+
+    .gallery-img {
+        width: 47%;
+    }
+}
+
+@media (max-width: 560px) {
+    .gallery-container {
+        flex-direction: column;
+            .gallery-img {
+                width: 100%;
+                margin: 15px auto;
+            }
+    }
+    
+    .gallery-img:nth-last-of-type(1) {
+        display: inline-block;
+    }
+}
+
 
 // FOOTER
 
@@ -181,5 +249,6 @@ footer {
             color: $bg-col2;
             text-align: center;
             margin: 0;
+            font-size: 16px;
         }
 }
