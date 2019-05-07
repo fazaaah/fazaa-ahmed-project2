@@ -151,9 +151,6 @@ header.contact-header {
     .contact-container {
         display: flex;
         flex-direction: column;
-            nav {
-                justify-content: center;
-            }
             .input-msg {
                 position: static;
                 margin: -240px auto 50px auto;
@@ -183,6 +180,10 @@ header.contact-header {
 // }
 
 @media (max-width: 800px) {
+    header.contact-header h2 {
+        margin-left: 0;
+    }
+
     section.contact-page {
         padding-bottom: 30px;
             .contact-info {
@@ -195,12 +196,16 @@ header.contact-header {
 }
 
 @media (max-width: 700px) {
-    .contact-header h2 {
+    header.contact-header h2 {
         font-size: 60px;
     }
 }
 
 @media (max-width: 600px) {
+    header.contact-header h2 {
+        margin-top: 35%;
+    }
+    
     .input-msg {
         margin-top: -100px;
         .name-email-c {

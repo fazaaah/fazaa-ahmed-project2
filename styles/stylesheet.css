@@ -643,10 +643,6 @@ header.contact-header {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .contact-container nav {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
     .contact-container .input-msg {
       position: static;
       margin: -240px auto 50px auto;
@@ -668,6 +664,8 @@ header.contact-header {
         justify-content: space-around; } }
 
 @media (max-width: 800px) {
+  header.contact-header h2 {
+    margin-left: 0; }
   section.contact-page {
     padding-bottom: 30px; }
     section.contact-page .contact-info {
@@ -679,10 +677,12 @@ header.contact-header {
         flex-direction: column; } }
 
 @media (max-width: 700px) {
-  .contact-header h2 {
+  header.contact-header h2 {
     font-size: 60px; } }
 
 @media (max-width: 600px) {
+  header.contact-header h2 {
+    margin-top: 35%; }
   .input-msg {
     margin-top: -100px; }
     .input-msg .name-email-c {
