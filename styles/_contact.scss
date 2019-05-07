@@ -2,7 +2,10 @@ header.contact-header {
     background: url(../assets/contact-header.jpg);
     background-size: cover;
     height: 67vh;
-    // font-size: 4vw;
+        h2 {
+            margin-top: 10%;
+            margin-left: 10%;
+        }
 }
 
 .contact-header i {
@@ -10,13 +13,22 @@ header.contact-header {
 }
 
 @media (max-width: 600px) {
-    .contact-header i {
-        display: inline;
-        width: 50px;
-        padding-top: 80px;
-        margin-left: 80%;
-        background: none;
-        font-size: 35px
+    .contact-header {
+        position: relative;
+            i {
+            display: inline;
+            position: absolute;
+            width: 50px;
+            top: 50px;
+            right: 50px;
+            // padding-top: 80px;
+            // margin-left: 80%;
+            background: none;
+            font-size: 35px
+        }
+            h2 {
+                margin-top: 35%;
+            }
     }
     .contact-header i:hover {
         color: $input-col;
@@ -32,9 +44,10 @@ header.contact-header {
 
 .socials i {
     background: none;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
     font-size: 30px;
     text-align: left;
+    margin-right: 26px;
 }
 
 .socials i:hover {
@@ -44,8 +57,12 @@ header.contact-header {
 .address {
     display: flex;
     flex-direction: column;
-        h4 {
-            margin: 5px 0 20px 0;
+        .info-email {
+            margin: 20px 0;
+            font-size: 26px;
+            font-family: $other-text;
+            text-transform: uppercase;
+            line-height: 1.1;
         }
         p {
             margin: 0;
@@ -66,7 +83,8 @@ header.contact-header {
     box-shadow: -35px 35px 0px 0px rgba(253,250,105,1);
     position: absolute;
     right: -40px;
-    top: -250px;
+    top: -240px;
+    width: 65%;
 }
 
 .name-email-c {
@@ -105,6 +123,7 @@ header.contact-header {
     padding: 15px;
     border: $input-col 2px solid;
     font-size: 20px;
+    margin-top: 45px;
 }
 
 .submit {
@@ -113,6 +132,7 @@ header.contact-header {
     padding: 8px 15px;
     margin-top: 30px;
     border: none;
+    transition: 0.2s ease;
 }
 
 @media (max-width: 1230px) {
@@ -121,9 +141,6 @@ header.contact-header {
     }
     .contact-info {
         width: 30%;
-            h4 {
-                font-size: 26px;
-            }
             p {
                 font-size: 18px;
             }
@@ -134,16 +151,25 @@ header.contact-header {
     .contact-container {
         display: flex;
         flex-direction: column;
+            nav {
+                justify-content: center;
+            }
             .input-msg {
                 position: static;
-                margin-top: -250px;
-                margin-bottom: 50px;
+                margin: -240px auto 50px auto;
+                width: 90%;
             }
             .contact-info {
                 width: 100%;
                 margin: 50px auto;
                 margin-bottom: 20px;
                 text-align: center;
+                    .socials i {
+                        margin: 0 13px;
+                    }
+                    .info-email {
+                        text-align: center;
+                    }
                     .physical-address {
                         display: flex;
                         justify-content: space-around;
@@ -175,11 +201,6 @@ header.contact-header {
 }
 
 @media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
-
-
     .input-msg {
         margin-top: -100px;
         .name-email-c {

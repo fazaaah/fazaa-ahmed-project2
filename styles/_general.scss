@@ -86,6 +86,12 @@ nav {
         }
 }
 
+@media (max-width: 1100px) {
+    nav {
+        justify-content: center;
+    }
+}
+
 nav a:hover {
     border-bottom: $input-col 3px solid;
 }

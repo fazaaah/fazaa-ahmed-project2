@@ -56,18 +56,24 @@ header.blog-header {
 .main-blog {
     width: 64%;
     padding-left: 50px;
+        .main-blog-img {
+            box-shadow: -35px 35px 0px 0px rgb(240, 236, 40);
+            position: relative;
+            top: -150px;
+            right: -10%;
+        }
         .main-blog-post {
             padding-top: 50%;
             border-left: $box-col 3px solid;
             border-bottom: $box-col 3px solid;
-            position: relative;
-                .main-blog-img {
-                    box-shadow: -35px 35px 0px 0px rgba(253,250,105,1);
-                    width: 125%;
-                    position: absolute;
-                    right: -21%;
-                    top: -220px;
-                }
+            // position: relative;
+                // .main-blog-img {
+                //     box-shadow: -35px 35px 0px 0px rgba(253,250,105,1);
+                    // width: 125%;
+                    // position: absolute;
+                    // right: -21%;
+                    // top: -220px;
+                
                 .main-blog-text {
                     padding-left: 35px;
                 }
