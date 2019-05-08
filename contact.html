@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
+
+    <ul class="skip-links">
+        <li>
+            <a href="#main">Skip to Main Content</a>
+        </li>
+    </ul>
     
     <header class="contact-header">
         <div class="wrapper">
@@ -26,7 +32,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <section class="contact-page">
             <div class="wrapper contact-container form">
 
@@ -48,10 +54,22 @@
 
                 <div class="contact-info">
                     <div class="socials">
-                        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-                        <a href="https://whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com" aria-label="Captured's Facebook page">
+                            <i aria-hidden class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="https://instagram.com" aria-label="Captured's Instagram page">
+                            <i aria-hidden class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://twitter.com" aria-label="Captured's Twitter page">
+                            <i aria-hidden class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="https://whatsapp.com" aria-label="Captured's Whatsapp group">
+                            <i aria-hidden class="fab fa-whatsapp"></i>
+                        </a>
+
                     </div>
                     <div class="address">
                         <p class="info-email">info@email.com</p>

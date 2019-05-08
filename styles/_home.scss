@@ -172,10 +172,6 @@ a.more:hover {
         position: static;
         width: 90%;
         margin: 0 auto;
-            // img {
-            //     width: 100%;
-            //     max-width: 100%;
-            // }
     }
     .left-gt {
         padding: 50px 0;
@@ -234,6 +230,10 @@ a.more:hover {
                         margin-top: 0;
                     }
             }
+}
+
+.icon i.fa-users {
+    padding-left: 8px;
 }
 
 @media (max-width: 950px) {

@@ -161,37 +161,16 @@ nav a:hover {
 }
 
 @media (max-width: 600px) {
-    header {
-        i.fa-bars {
-            display: inline;
+    header i.fa-bars {
+            display: block;
             position: absolute;
             width: 50px;
             top: 50px;
             right: 50px;
             background: none;
-            font-size: 35px
-        }
+            font-size: 35px;
     }
 }
-
-// .fas-bars {
-//     display: none;
-// }
-
-// @media (max-width: 600px) {
-//     .fas-bars {
-//         display: block;
-//     }
-// }
-//     .nav-list {
-//         display: none;
-//         // flex-direction: column;
-//         // text-align: center;
-//         //     li {
-//         //         margin: 5px auto;
-//         //     }
-//     }
-// }
 
 // CLASSES
 
@@ -300,3 +279,24 @@ textarea:focus {
     }
 }
 
+// SKIP LINK
+
+.skip-links {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    list-style-type: none;
+        a {
+            position: absolute; 
+            top: -2rem;
+            right: 0;
+            background-color: $bg-col1;
+            color: $text-col;
+            font-family: $reg-text;
+            font-size: 18px;
+            z-index: 999;
+                &:focus {
+                    top: 0;
+                }
+        }      
+}

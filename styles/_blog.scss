@@ -1,3 +1,5 @@
+// HEADER
+
 .blog-header {
     background: url(../assets/blog-header.jpg);
     background-size: cover;
@@ -6,9 +8,11 @@
 
 @media (max-width: 600px) {
     .blog-header h2 {
-        margin-top: 50%;
+        margin-top: 70%;
     }
 }
+
+// SIDEBAR
 
 .sidebar {
     width: 36%;
@@ -56,6 +60,8 @@
     text-decoration: underline;
 }
 
+// BLOG POST
+
 .main-blog {
     width: 64%;
     padding-left: 50px;
@@ -76,50 +82,20 @@
         }
 }
 
-.user-img {
-    width: 250px;
-}
-
 .caption {
     margin-top: 5px;
     margin-bottom: 40px;
 }
 
-.input-comment {
-    .comment {
-        border: $input-col 2px solid;
-        resize: none;
-        overflow: hidden;
-    }
-}
-
-.user-posts {
-    margin: 30px 0;
-}
-
-.user-posts:nth-last-of-type(1) {
-    margin-top: 70px;
-    margin-bottom: 10px;
-}
-
-.comment-posts {
-    margin-left: 25px;
-        p {
-            margin-top: 0;
-            margin-bottom: 5px;
-        }
-}
-
 @media (max-width: 1230px) {
-    .main-blog-img img {
-        margin-right: -15%;
+    .main-blog {
+        .main-blog-img {
+        margin-right: -15.5%;
+        }
     }
 }
 
 @media (max-width: 1000px) {
-    .blog.wrapper {
-        width: 90%;
-    }
     .sidebar {
         display: none;
     }
@@ -135,13 +111,42 @@
 }
 
 @media (max-width: 600px) {
-    .blog-header.fa-bars {
-            display: inline;
-            position: absolute;
-            width: 50px;
-            top: 50px;
-            right: 50px;
-            background: none;
-            font-size: 35px
+    .main-blog {
+        .main-blog-img img {
+            box-shadow: -20px 20px 0px 0px rgb(240, 236, 40);
+        }
     }
+}
+
+// COMMENTS
+
+.user-img {
+    width: 250px;
+}
+
+.user-posts {
+    margin: 30px 0;
+}
+
+.user-posts:nth-last-of-type(1) {
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+// POST COMMENT
+
+.input-comment {
+    .comment {
+        border: $input-col 2px solid;
+        resize: none;
+        overflow: hidden;
+    }
+}
+
+.comment-posts {
+    margin-left: 25px;
+        p {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
 }
