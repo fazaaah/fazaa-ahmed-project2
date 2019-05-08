@@ -103,23 +103,6 @@ header.blog-header {
         resize: none;
         overflow: hidden;
     }
-    .submit {
-        @include click(32px);
-        background: $input-col;
-        padding: 8px 15px;
-        margin-top: 30px;
-        border: none;
-        transition: 0.3s ease;
-    }
-}
-
-.submit:hover {
-    background: darken($input-col, 20%)
-}
-
-.name-email {
-    display: flex;
-    justify-content: space-between;
 }
 
 .name,
@@ -130,21 +113,6 @@ header.blog-header {
     font-size: 20px;
     margin-top: 30px;
     padding: 15px;
-}
-
-.name,
-.email {
-    width: 40%;
-    border: none;
-    border-bottom: $input-col 2px solid;
-}
-
-// .name {
-//     margin-right: 40px;
-// }
-
-::placeholder {
-    color: $text-col;
 }
 
 .user-posts {

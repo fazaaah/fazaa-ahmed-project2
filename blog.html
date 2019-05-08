@@ -28,15 +28,8 @@
 <main>
 
     <section class="blog">
-        <!-- <div class="main-blog-img">
-            <img src="assets/blog-post-image.jpg"
-                alt="Woman sitting in a field of flowers, turned away pointing her camera at something.">
-        </div> -->
         <div class="wrapper flex">
             <div class="sidebar">
-                <!-- <div>
-                    <img src="assets/side-blog-image.jpg" alt="Camera lens floating above someone's open hand, with some hills and the sea in the background." class="side-blog-img">
-                </div> -->
                 <div class="sidebar-text">
                     <div class="side-blog-img">
                         <img src="assets/side-blog-image.jpg" alt="Camera lens floating above someone's open hand, with some hills and the sea in the background.">
@@ -58,9 +51,6 @@
             </div>
         
             <div class="main-blog">
-                <!-- <div>
-                    <img src="assets/blog-post-image.jpg" alt="Woman sitting in a field of flowers, turned away pointing her camera at something." class="main-blog-img">
-                </div> -->
                 <div class="main-blog-post">
                     <div class="main-blog-img">
                         <img src="assets/blog-post-image.jpg"
@@ -80,7 +70,8 @@
                     <div>
                         <div class="flex user-posts">
                             <div class="user-img">
-                                <img src="assets/comment-1.jpg" alt="Photo of user making comment.">
+                                <img src="assets/comment-1.jpg" alt="">
+                                <!-- Chose not to include alt text as 'photo of commenter' does not add much meaning and would be quite repetitive. -->
                             </div>
                             <div class="comment-posts">
                                 <p>Tuesday October 9th, 2018 by Jeremy</p>
@@ -89,7 +80,7 @@
                         </div>
                         <div class="flex user-posts">
                             <div class="user-img">
-                                <img src="assets/comment-2.jpg" alt="Photo of user making comment.">
+                                <img src="assets/comment-2.jpg" alt="">
                             </div>
                             <div class="comment-posts">
                                 <p>Tuesday October 9th, 2018 by Jeremy</p>
@@ -102,10 +93,17 @@
                 <div class="input-comment flex-column">
                     <div class="name-email space-btwn">
                         <input type="text" id="name" class="name" placeholder="Name">
+                        <label for="name" class="visually-hidden">Name</label>
+
                         <input type="email" id="email" class="email" placeholder="Email address">
+                        <label for="email" class="visually-hidden">Email</label>
                     </div>
-                    <textarea name="text" rows="10" cols="10" wrap="soft" maxlength="400" class="comment" placeholder="Comment"></textarea>
-                    <input type="submit" class="submit" value="Post comment">
+
+                    <textarea name="comment" id="comment" rows="10" cols="10" wrap="soft" maxlength="400" class="comment" placeholder="Comment"></textarea>
+                    <label for="comment" class="visually-hidden">Comment</label>
+
+                    <input type="submit" id="submit" class="submit" value="Post comment">
+                    <label for="submit" class="visually-hidden">Submit</label>
                 </div>
             </div>
 

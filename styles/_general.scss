@@ -206,3 +206,62 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 }
+
+// FORMS
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+::placeholder {
+    color: $text-col;
+}
+
+.name-email {
+    display: flex;
+    justify-content: space-between;
+        .name, .email {
+        width: 40%;
+        border: none;
+        border-bottom: $input-col 2px solid;
+    }
+}
+
+textarea:focus {
+    background: darken($bg-col1, 5%);
+}
+
+.submit {
+    @include click(32px);
+    background: $input-col;
+    padding: 8px 15px;
+    margin-top: 30px;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.submit:hover {
+    background: darken($input-col, 20%);
+}
+
+.submit:active {
+    border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+    .name-email {
+    flex-direction: column;
+        .name, .email {
+            width: 90%;
+        }
+    }
+}

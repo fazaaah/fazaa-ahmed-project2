@@ -16,17 +16,17 @@ header.contact-header {
 @media (max-width: 600px) {
     .contact-header {
         position: relative;
-            i {
-            display: inline;
-            position: absolute;
-            width: 50px;
-            top: 50px;
-            right: 50px;
-            // padding-top: 80px;
-            // margin-left: 80%;
-            background: none;
-            font-size: 35px
-        }
+            // i {
+            // display: inline;
+            // position: absolute;
+            // width: 50px;
+            // top: 50px;
+            // right: 50px;
+            // // padding-top: 80px;
+            // // margin-left: 80%;
+            // background: none;
+            // font-size: 35px
+            // }
             h2 {
                 margin-top: 35%;
             }
@@ -88,11 +88,6 @@ header.contact-header {
     width: 65%;
 }
 
-.name-email-c {
-    display: flex;
-    justify-content: space-between;
-}
-
 .name-c,
 .email-c,
 .comment-c {
@@ -101,13 +96,6 @@ header.contact-header {
     font-size: 20px;
     margin-top: 30px;
     padding: 15px;
-}
-
-.name-c,
-.email-c {
-    width: 40%;
-    border: none;
-    border-bottom: $input-col 2px solid;
 }
 
 .name-c,
@@ -125,15 +113,6 @@ header.contact-header {
     border: $input-col 2px solid;
     font-size: 20px;
     margin-top: 45px;
-}
-
-.submit {
-    @include click(32px);
-    background: $input-col;
-    padding: 8px 15px;
-    margin-top: 30px;
-    border: none;
-    transition: 0.2s ease;
 }
 
 @media (max-width: 1230px) {
@@ -176,10 +155,6 @@ header.contact-header {
     }
 }
 
-// .socials i {
-//     text-align: center;
-// }
-
 @media (max-width: 800px) {
     header.contact-header h2 {
         margin-left: 0;
@@ -209,12 +184,6 @@ header.contact-header {
     
     .input-msg {
         margin-top: -100px;
-        .name-email-c {
-            flex-direction: column;
-                .name-c, .email-c {
-                    width: 90%;
-                }
-        }
     }
 }
 

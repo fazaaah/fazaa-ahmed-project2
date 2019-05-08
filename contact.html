@@ -31,13 +31,19 @@
             <div class="wrapper contact-container form">
 
                 <div class="input-msg flex-column">
-                    <div class="name-email-c">
-                        <input type="text" id="name" class="name-c" placeholder="Name">
-                        <input type="email" id="email" class="email-c" placeholder="Email address">
+                    <div class="name-email">
+                        <input type="text" id="name" class="name" placeholder="Name">
+                        <label for="name" class="visually-hidden">Name</label>
+
+                        <input type="email" id="email" class="email" placeholder="Email address">
+                        <label for="email" class="visually-hidden">Email</label>
                     </div>
-                    <textarea name="text" rows="10" cols="10" wrap="soft" maxlength="400" class="message"
-                        placeholder="Message"></textarea>
-                    <input type="submit" class="submit" value="Submit">
+
+                    <textarea name="message" id="message" rows="10" cols="10" wrap="soft" maxlength="400" class="message" placeholder="Message"></textarea>
+                    <label for="message" class="visually-hidden">Message</label>
+
+                    <input type="submit" id="submit" class="submit" value="Submit">
+                    <label for="submit" class="visually-hidden">Submit</label>
                 </div>
 
                 <div class="contact-info">
@@ -57,15 +63,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="input-msg flex-column">
-                    <div class="name-email flex">
-                        <input type="text" id="name" class="name" placeholder="Name">
-                        <input type="email" id="email" class="email" placeholder="Email address">
-                    </div>
-                    <textarea name="text" rows="10" cols="10" wrap="soft" maxlength="400" class="message" placeholder="Message"></textarea>
-                    <input type="submit" class="submit" value="Submit">
-                </div> -->
 
             </div>
         </section>
