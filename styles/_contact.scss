@@ -9,10 +9,6 @@ header.contact-header {
         }
 }
 
-.contact-header i {
-    display: none;
-}
-
 @media (max-width: 600px) {
     .contact-header {
         position: relative;
@@ -73,6 +69,8 @@ header.contact-header {
 .contact-info {
     margin-bottom: 80px;
 }
+
+// CONTACT FORM
 
 .form {
     position: relative;
@@ -184,6 +182,13 @@ header.contact-header {
     
     .input-msg {
         margin-top: -100px;
+        box-shadow: -20px 20px 0px 0px rgba(253,250,105,1);
+    }
+}
+
+@media (max-width: 400px) {
+    .input-msg {
+        padding: 15px;
     }
 }
 

@@ -23,12 +23,15 @@
 h1 {
     @include headings(120px, normal, normal);
     text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 28%;
+    z-index: 5;
 }
 
 @media (max-width: 1100px) {
     h1 {
         font-size: 90px;
-        margin-left: 20%;
     }
 }
 
@@ -40,16 +43,14 @@ h1 {
 
 @media (max-width: 750px) {
     h1 {
-        margin-left: 0%;
+        left: 15%;
     }
 }
 
 @media (max-width: 600px) {
     h1 {
-        position: static;
         font-size: 60px;
-        margin-top: 30%;
-        margin-left: 0;
+        top: 70%;
     }
 }
 
@@ -70,9 +71,21 @@ h3 {
     margin: 0;
 }
 
+@media (max-width: 1045px) {
+    h3 {
+        font-size: 36px;
+    }
+}
+
 h4 {
     @include headings(32px, normal, 1px);
     margin-bottom: 10px;
+}
+
+@media (max-width: 1045px) {
+    h4 {
+        font-size: 28px;
+    }
 }
 
 // ELEMENTS
@@ -106,6 +119,12 @@ p {
     margin-top: 15px;
 }
 
+@media (max-width: 560px) {
+    p {
+        font-size: 18px;
+    }
+}
+
 a {
     text-decoration: none;
     color: $text-col;
@@ -128,6 +147,9 @@ nav {
 @media (max-width: 1100px) {
     nav {
         justify-content: center;
+            .nav-list {
+                padding-left: 0;
+            }
     }
 }
 
@@ -264,4 +286,8 @@ textarea:focus {
             width: 90%;
         }
     }
+    ::placeholder {
+        font-size: 18px;
+    }
 }
+

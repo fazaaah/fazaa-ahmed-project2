@@ -1,20 +1,19 @@
 // HEADER
 
-header {
+.home-header {
     height: 90vh;
     margin-top: 0;
     background: url(../assets/header-image.jpg);
     background-size: cover;
     background-position: center center;
     position: relative;
-        .h1 {
-            position: absolute;
-            // top: 400px;
-            // left: 400px;
-            top: 58%;
-            left: 28%;
-            z-index: 5;
-        }
+        // .h1 {
+        //     position: absolute;
+        //     top: 58%;
+        //     left: 28%;
+        //     z-index: 5;
+        // }
+}
 
 .header-img {
     width: 42%;
@@ -28,47 +27,19 @@ header {
         }
 }
 
-@media (max-width: 1300px) {
-    .h1 {
-        left: 20%;
-    }
-}
-
-@media (max-width: 480px) {
-    .h1 {
-        left: 10%;
-    }
-}
-
 @media (max-width: 1100px) {
-    h1.h1 {
-        @include headings(80px, normal, normal);
-    }
-}
-
-@media (max-width: 700px) {
-    header {
-        background-position: left left;
+    .home-header {
+        background-position: 45% center;
     }
 }
 
 @media (max-width: 600px) {
+    .home-header {
+        background-position: 30% 50%;
+    }
     .header-img {
         display: none;
     }
-}
-        
-        // nav {
-        //     justify-content: flex-end;
-        //     margin-right: 50px;
-        //         ul {
-        //             margin-top: 0;
-        //             align-items: flex-end;
-        //                 li {
-        //                 padding: 30px;
-        //                 }
-        //             }
-        //     }
 }
 
 // ABOUT
@@ -101,6 +72,9 @@ a.more:hover {
 @media (max-width: 600px) {
     .about {
         padding-top: 0px;
+            .about-content {
+                margin-top: 80px;
+            }
     }
 }
 
@@ -142,15 +116,19 @@ a.more:hover {
 }
 
 .left-img {
-    box-shadow: 35px 35px 0px 0px rgba(253,250,105,1);
     top: -35px;
     left: 0px;
+        img {
+            box-shadow: 35px 35px 0px 0px rgba(253,250,105,1);
+        }
 }
 
 .right-img {
-    box-shadow: -35px 35px 0px 0px rgba(253,250,105,1);
     bottom: -35px;
     right: 0;
+        img {
+            box-shadow: -35px 35px 0px 0px rgba(253,250,105,1);
+        }
 }
 
 .right-gt {
@@ -216,11 +194,11 @@ a.more:hover {
 }
 
 @media (max-width: 600px) {
-    .left-img {
+    .left-img img {
     box-shadow: 20px 20px 0px 0px rgba(253,250,105,1);
     }
 
-.right-img {
+.right-img img {
     box-shadow: -20px 20px 0px 0px rgba(253,250,105,1);
     }
 }
@@ -270,17 +248,11 @@ a.more:hover {
     }
 }
 
-// i {
-//     font-size: 22px;
-//     background: $input-col;
-//     border-radius: 50%;
-//     padding: 10px;
-//     height: 45px;
-//     width: 45px;
-//     text-align: center;
-//     vertical-align: middle;
-//     line-height: 25px;
-// }
+@media (max-width: 400px) {
+    .icon-text {
+        margin-left: 15px;
+    }
+}
 
 // BANNER
 
