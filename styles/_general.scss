@@ -1,4 +1,4 @@
-// HEADING STYLES
+// MIXINS
 
 // Headings
 @mixin headings($font-size, $line-height, $let-spacing) {
@@ -19,6 +19,8 @@
     font-size: 20px;
     text-align: center;
 }
+
+// TEXT STYLES
 
 h1 {
     @include headings(120px, normal, normal);
@@ -56,7 +58,8 @@ h1 {
 
 @media (max-width: 400px) {
     h1 {
-        font-size: 45px;
+        font-size: 50px;
+        left: 10%;
     }
 }
 
@@ -157,10 +160,6 @@ nav a:hover {
     border-bottom: $input-col 3px solid;
 }
 
-.nav-list {
-    display: flex;
-}
-
 @media (max-width: 600px) {
     header {
         i.fa-bars {
@@ -169,8 +168,6 @@ nav a:hover {
             width: 50px;
             top: 50px;
             right: 50px;
-            // padding-top: 80px;
-            // margin-left: 80%;
             background: none;
             font-size: 35px
         }
@@ -185,6 +182,7 @@ nav a:hover {
 //     .fas-bars {
 //         display: block;
 //     }
+// }
 //     .nav-list {
 //         display: none;
 //         // flex-direction: column;
@@ -195,13 +193,21 @@ nav a:hover {
 //     }
 // }
 
+// CLASSES
+
 .wrapper {
     width: 80%;
     margin: 0 auto;
 }
 
 @media (max-width: 600px) {
-    width: 90%;
+    .wrapper {
+        width: 90%;
+    }
+}
+
+.nav-list {
+    display: flex;
 }
 
 .flex {
@@ -216,11 +222,6 @@ nav a:hover {
 .flex-wrap {
     display: flex;
     flex-wrap: wrap;
-}
-
-.space-btwn {
-    display: flex;
-    justify-content: space-between;
 }
 
 .flex-cc {
@@ -256,6 +257,14 @@ nav a:hover {
         border: none;
         border-bottom: $input-col 2px solid;
     }
+}
+
+input, textarea {
+    background: rgba(0,0,0,0);
+    font-family: $reg-text;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 15px;
 }
 
 textarea:focus {

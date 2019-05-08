@@ -1,17 +1,18 @@
-header.blog-header {
+.blog-header {
     background: url(../assets/blog-header.jpg);
     background-size: cover;
     height: 67vh;
 }
 
-// .blog {
-//     position: relative;
-// }
+@media (max-width: 600px) {
+    .blog-header h2 {
+        margin-top: 50%;
+    }
+}
 
 .sidebar {
     width: 36%;
     padding-right: 50px;
-    // margin-left: 10%;
         .sidebar-text {
             background: $bg-col2;
             padding: 100% 25px 25px 25px;
@@ -25,6 +26,7 @@ header.blog-header {
                 }
         }
 }
+
 .sidebar-text ul {
     padding-left: 20px;
 }
@@ -58,8 +60,6 @@ header.blog-header {
     width: 64%;
     padding-left: 50px;
         .main-blog-img {
-            // top: -150px;
-            // right: -10%;
             position: relative;
             margin: -80% -21.5% 60px 32px;
                 img {
@@ -70,23 +70,13 @@ header.blog-header {
             padding-top: 50%;
             border-left: $box-col 3px solid;
             border-bottom: $box-col 3px solid;
-            // position: relative;
-                // .main-blog-img {
-                //     box-shadow: -35px 35px 0px 0px rgba(253,250,105,1);
-                    // width: 125%;
-                    // position: absolute;
-                    // right: -21%;
-                    // top: -220px;
-                
                 .main-blog-text {
                     padding-left: 35px;
-            
                 }
         }
 }
 
 .user-img {
-    // width: 35%;
     width: 250px;
 }
 
@@ -96,23 +86,11 @@ header.blog-header {
 }
 
 .input-comment {
-    // margin-right: 10%;
     .comment {
-        // height: 200px;
         border: $input-col 2px solid;
         resize: none;
         overflow: hidden;
     }
-}
-
-.name,
-.email,
-.comment {
-    background: rgba(0,0,0,0);
-    font-family: $reg-text;
-    font-size: 20px;
-    margin-top: 30px;
-    padding: 15px;
 }
 
 .user-posts {
@@ -153,5 +131,17 @@ header.blog-header {
             .main-blog-img {
                 margin: -80% auto 60px auto;
             }
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-header.fa-bars {
+            display: inline;
+            position: absolute;
+            width: 50px;
+            top: 50px;
+            right: 50px;
+            background: none;
+            font-size: 35px
     }
 }

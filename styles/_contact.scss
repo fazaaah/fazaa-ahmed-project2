@@ -1,4 +1,4 @@
-header.contact-header {
+.contact-header {
     background: url(../assets/contact-header.jpg);
     background-size: cover;
     background-position: center center;
@@ -12,17 +12,6 @@ header.contact-header {
 @media (max-width: 600px) {
     .contact-header {
         position: relative;
-            // i {
-            // display: inline;
-            // position: absolute;
-            // width: 50px;
-            // top: 50px;
-            // right: 50px;
-            // // padding-top: 80px;
-            // // margin-left: 80%;
-            // background: none;
-            // font-size: 35px
-            // }
             h2 {
                 margin-top: 35%;
             }
@@ -84,24 +73,6 @@ header.contact-header {
     right: -40px;
     top: -240px;
     width: 65%;
-}
-
-.name-c,
-.email-c,
-.comment-c {
-    background: rgba(0,0,0,0);
-    font-family: $reg-text;
-    font-size: 20px;
-    margin-top: 30px;
-    padding: 15px;
-}
-
-.name-c,
-.email-c,
-.message {
-    background: rgba(0,0,0,0);
-    font-family: $reg-text;
-    margin-top: 30px;
 }
 
 .message {
@@ -170,16 +141,15 @@ header.contact-header {
 }
 
 @media (max-width: 700px) {
-    header.contact-header h2 {
+    .contact-header h2 {
         font-size: 60px;
     }
 }
 
 @media (max-width: 600px) {
-    header.contact-header h2 {
+    .contact-header h2 {
         margin-top: 35%;
     }
-    
     .input-msg {
         margin-top: -100px;
         box-shadow: -20px 20px 0px 0px rgba(253,250,105,1);

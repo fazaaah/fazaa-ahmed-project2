@@ -43,7 +43,8 @@ h1 {
 
 @media (max-width: 400px) {
   h1 {
-    font-size: 45px; } }
+    font-size: 50px;
+    left: 10%; } }
 
 h2 {
   font-family: "Playfair Display", serif;
@@ -143,11 +144,6 @@ nav {
 nav a:hover {
   border-bottom: #4ceea7 3px solid; }
 
-.nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 @media (max-width: 600px) {
   header i.fa-bars {
     display: inline;
@@ -163,7 +159,13 @@ nav a:hover {
   margin: 0 auto; }
 
 @media (max-width: 600px) {
-  width: 90%; }
+  .wrapper {
+    width: 90%; } }
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .flex {
   display: -webkit-box;
@@ -185,14 +187,6 @@ nav a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-
-.space-btwn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
 
 .flex-cc {
   display: -webkit-box;
@@ -241,6 +235,13 @@ nav a:hover {
     width: 40%;
     border: none;
     border-bottom: #4ceea7 2px solid; }
+
+input, textarea {
+  background: rgba(0, 0, 0, 0);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 15px; }
 
 textarea:focus {
   background: #d8fae2; }
@@ -575,10 +576,14 @@ footer {
     margin: 0;
     font-size: 16px; }
 
-header.blog-header {
+.blog-header {
   background: url(../assets/blog-header.jpg);
   background-size: cover;
   height: 67vh; }
+
+@media (max-width: 600px) {
+  .blog-header h2 {
+    margin-top: 50%; } }
 
 .sidebar {
   width: 36%;
@@ -646,15 +651,6 @@ header.blog-header {
   resize: none;
   overflow: hidden; }
 
-.name,
-.email,
-.comment {
-  background: rgba(0, 0, 0, 0);
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  margin-top: 30px;
-  padding: 15px; }
-
 .user-posts {
   margin: 30px 0; }
 
@@ -684,12 +680,22 @@ header.blog-header {
     .main-blog .main-blog-img {
       margin: -80% auto 60px auto; } }
 
-header.contact-header {
+@media (max-width: 600px) {
+  .blog-header.fa-bars {
+    display: inline;
+    position: absolute;
+    width: 50px;
+    top: 50px;
+    right: 50px;
+    background: none;
+    font-size: 35px; } }
+
+.contact-header {
   background: url(../assets/contact-header.jpg);
   background-size: cover;
   background-position: center center;
   height: 67vh; }
-  header.contact-header h2 {
+  .contact-header h2 {
     margin-top: 10%;
     margin-left: 10%; }
 
@@ -753,22 +759,6 @@ header.contact-header {
   top: -240px;
   width: 65%; }
 
-.name-c,
-.email-c,
-.comment-c {
-  background: rgba(0, 0, 0, 0);
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  margin-top: 30px;
-  padding: 15px; }
-
-.name-c,
-.email-c,
-.message {
-  background: rgba(0, 0, 0, 0);
-  font-family: "Roboto", sans-serif;
-  margin-top: 30px; }
-
 .message {
   resize: none;
   overflow: hidden;
@@ -828,11 +818,11 @@ header.contact-header {
         flex-direction: column; } }
 
 @media (max-width: 700px) {
-  header.contact-header h2 {
+  .contact-header h2 {
     font-size: 60px; } }
 
 @media (max-width: 600px) {
-  header.contact-header h2 {
+  .contact-header h2 {
     margin-top: 35%; }
   .input-msg {
     margin-top: -100px;
