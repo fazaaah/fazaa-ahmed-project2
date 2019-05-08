@@ -11,6 +11,7 @@ header.blog-header {
 .sidebar {
     width: 36%;
     padding-right: 50px;
+    // margin-left: 10%;
         .sidebar-text {
             background: $bg-col2;
             padding: 100% 25px 25px 25px;
@@ -57,10 +58,13 @@ header.blog-header {
     width: 64%;
     padding-left: 50px;
         .main-blog-img {
-            box-shadow: -35px 35px 0px 0px rgb(240, 236, 40);
+            // top: -150px;
+            // right: -10%;
             position: relative;
-            top: -150px;
-            right: -10%;
+            margin: -80% -21.5% 60px 35px;
+                img {
+                    box-shadow: -35px 35px 0px 0px rgb(240, 236, 40);
+                }
         }
         .main-blog-post {
             padding-top: 50%;
@@ -76,6 +80,7 @@ header.blog-header {
                 
                 .main-blog-text {
                     padding-left: 35px;
+            
                 }
         }
 }
@@ -91,6 +96,7 @@ header.blog-header {
 }
 
 .input-comment {
+    // margin-right: 10%;
     .comment {
         // height: 200px;
         border: $input-col 2px solid;
@@ -156,4 +162,28 @@ header.blog-header {
             margin-top: 0;
             margin-bottom: 5px;
         }
+}
+
+@media (max-width: 1230px) {
+    .main-blog-img img {
+        margin-right: -15%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .blog.wrapper {
+        width: 90%;
+    }
+    .sidebar {
+        display: none;
+    }
+
+    .main-blog {
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 0;
+            .main-blog-img {
+                margin: -80% auto 60px auto;
+            }
+    }
 }
